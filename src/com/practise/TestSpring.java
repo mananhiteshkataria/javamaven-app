@@ -10,5 +10,7 @@ public class TestSpring {
 		DBOperation dbOperation=(DBOperation)ctx.getBean("b1");
 		dbOperation.store();
 		dbOperation.delete();
+		
+		
 	}
 }
