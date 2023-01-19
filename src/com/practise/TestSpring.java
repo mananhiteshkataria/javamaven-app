@@ -10,7 +10,12 @@ public class TestSpring {
 		DBOperation dbOperation=(DBOperation)ctx.getBean("b1");
 		dbOperation.store();
 		dbOperation.delete();
-		
+		IDImpl idImpl=(IDImpl)ctx.getBean("b2");
+		IDImpl iDImpl=(IDImpl)ctx.getBean("b3");
+		idImpl.info();
+		iDImpl.info();
+		ClassPathXmlApplicationContext cpax=(ClassPathXmlApplicationContext)ctx;
+		cpax.close();
 		
 	}
 }
